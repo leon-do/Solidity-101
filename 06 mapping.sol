@@ -7,8 +7,8 @@ contract myContract {
 
     mapping (address => uint) public myMap;
     
-    function sendMoney(uint userAmount) returns (uint){
-        myMap[msg.sender] += userAmount;
+    function sendMoney(uint _userAmount) returns (uint){
+        myMap[msg.sender] += _userAmount;
         return myMap[msg.sender];
     }
     
