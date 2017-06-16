@@ -21,6 +21,3 @@ contract myContract {
     }
     
 }
-
-
-
