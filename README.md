@@ -3,12 +3,12 @@
 
 http://solidity.readthedocs.io/en/develop/introduction-to-smart-contracts.html
 
+http://solidity.readthedocs.io/en/develop/units-and-global-variables.html
 
 ```
 My notes:
 - if (x) throw; aka require(!x);
 
-http://solidity.readthedocs.io/en/develop/units-and-global-variables.html
 <address>.balance (uint256):
 balance of the Address in Wei
 
