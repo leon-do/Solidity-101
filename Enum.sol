@@ -1,3 +1,5 @@
+//Enums can be used to create custom types with a finite set of values
+
 pragma solidity ^0.4.0;
 
 contract myContract {
