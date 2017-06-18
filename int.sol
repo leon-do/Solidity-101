@@ -1,11 +1,13 @@
+// Unsigned ++
+// Signed + & - (positive or negative sign)
+
 pragma solidity ^0.4.0;
 
 contract myContract {
-
-    int public myInt = 9000;
     
-    function myFunction() returns (int){
-        return myInt;
+    function myFunction() returns (int myInt, uint myUint){
+        myInt = -888888888;
+        myUint = 999999999;
     }
     
 }
