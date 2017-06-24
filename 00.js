@@ -1,3 +1,5 @@
-var myBool = true;
+var myArr = []
 
-console.log(!myBool)
+myArr[2] = 'hello'
+
+console.log(myArr) // [ , , 'hello' ]
