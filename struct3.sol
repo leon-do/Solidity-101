@@ -16,18 +16,18 @@ contract myContract {
 
 
 	// {myNum: 9000, myString: 'hello'}
-    struct MyStruct {
+    struct item {
         uint myNum;
         string myString;
     }
     
     // the key ('myKey') is a string
-    mapping (string => MyStruct) myMap;
+    mapping (string => item) myMap;
 
     function myFunction() returns (uint){
         
         // var myMap = {myKey: {myNum: 9000, myString: 'hello'}}
-        myMap['myKey'] = MyStruct(9000, 'hello');
+        myMap['myKey'] = item(9000, 'hello');
 
         // 9000
         return myMap['myKey'].myNum;

@@ -10,6 +10,10 @@ contract myContract {
     function myFunction(int _myArg) returns (int){
         return _myArg + myInt;
     }
+
+    function getMyInt() returns (int) {
+    	return myInt;
+    }
     
     
 }

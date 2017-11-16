@@ -1,11 +1,24 @@
-pragma solidity ^0.4.11;
+// use underscore for args
 
-contract Purchase {
+
+pragma solidity ^0.4.0;
+
+contract myContract {
+
+    int public myInt;
+    function getMyInt() returns (int) {
+    	return 1 + 2;
+    }
     
-    function myFunction() returns (uint x, uint y){
-        x = 11;
-        y = 22;
+    function getMyAddress() returns (address) {
+        return msg.sender;
+    }
+    
+    
+    int[] public myArray = [11,22,33];
+    function getValueFromArray() returns(int){
+        return myArray[1];
     }
 
-
+    
 }
