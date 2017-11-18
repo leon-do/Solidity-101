@@ -1,0 +1,22 @@
+contract array_in_mapping{
+
+    uint public itemNumber = 0;
+
+    struct Address{
+        uint item;
+    }
+
+    mapping(address => Address[]) addressList;
+
+    function add() public {
+        // new itemNumber
+        itemNumber++;
+        
+        // add new itemNumber to item
+        addressList[msg.sender].push(Address(itemNumber));
+    }
+
+    function get_items_from_address(address _address, uint index) public returns(uint){
+        return addressList[_address][index].item;
+    }
+}
